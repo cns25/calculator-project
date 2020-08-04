@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        double a, b, c = 0.0;
+
+        System.out.print("First number");
+        a = in.nextDouble();
+        System.out.print("Second number");
+        b = in.nextDouble();
+        System.out.print("Choose the operation 1.Addition 2.Subtraction 3.Multiplication 4.Division");
+        double calculate= in.nextDouble();
+        double addition = 1;
+        double subtraction = 2;
+        double multiplication = 3;
+        double division = 4 ;
+        double power = 5;
+        if (calculate== addition) {
+        	c = a + b;  
+        	System.out.println(a + " + " + b + " = " + c);  }
+        else if (calculate == subtraction)  {
+        	c = a - b;  
+        	System.out.println(a + " - " + b + " = " + c);	}
+        else if (calculate == multiplication)	{
+        	c = a * b;   
+        	System.out.println(a + " * " + b + " = " + c);	}
+        else if (calculate == division)   {
+        	c = a / b;  
+        	System.out.println(a + " / " + b + " = " + c);	}
+        
+    }
+}
